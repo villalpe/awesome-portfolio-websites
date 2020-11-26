@@ -11,7 +11,7 @@ const projects = [
     Githublink: "",
   },
   {
-    title: "Chess Engine",
+    title: "Motor de Ajedrez",
     cardImage: "assets/images/project-page/chess.jpg",
     description:
       "A chess engine for a popular game dev engine.",

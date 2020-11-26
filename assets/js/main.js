@@ -28,17 +28,17 @@ function topFunction() {
 let header = $(`
 <nav class="black">
 <div class="nav-wrapper">
-    <a href="#!" class="brand-logo"><img src="assets/images/John-Doe1.png"></a>
+    <a href="#!" class="brand-logo"><img src="assets/images/logo_cambios.png"></a>
     <a href="#" data-target="mobile-demo" class="white-text sidenav-trigger"><i
             class="material-icons">menu</i></a>
     <ul class="right hide-on-med-and-down">
-        <li><a class="white-text" href="index.html">Home</a></li>
-        <li><a class="white-text" href="experience.html">Experience</a></li>
-        <li><a class="white-text" href="projects.html">Projects</a></li>
-        <li><a class="white-text" href="research.html">Research</a></li>
-        <li><a class="white-text" href="education.html">Education</a></li>
-        <li><a class="white-text" href="index.html">Blog</a></li>
-        <li><a class="white-text" href="https://docs.google.com/document/d/1-SX2Pz1rD9D1IS-r5PpCCb1JeihSM_BtnI5Y9uruQGc/edit?usp=sharing" target="_blank">My Resume</a></li>
+        <li><a class="white-text" href="index.html">Inicio</a></li>
+        <li><a class="white-text" href="experience.html">Experiencia</a></li>
+        <li><a class="white-text" href="projects.html">Proyectos</a></li>
+        <li><a class="white-text" href="research.html">Investigación</a></li>
+        <li><a class="white-text" href="education.html">Educación</a></li>
+        <li><a class="white-text" href="services.html">Servicios</a></li>
+        <li><a class="white-text" href="https://docs.google.com/document/d/1-SX2Pz1rD9D1IS-r5PpCCb1JeihSM_BtnI5Y9uruQGc/edit?usp=sharing" target="_blank">Mi Resume</a></li>
         <!--TOGGLE FOR LIGHT/DARK MODE-->
         <li>
         <label for="switch" class="theme-switch">
@@ -60,13 +60,13 @@ let header = $(`
 
 <!--Side Nav Bar -->
 <ul class="sidenav" id="mobile-demo">
-<li><a href="index.html">Home</a></li>
-<li><a href="experience.html">Experience</a></li>
-<li><a href="projects.html">Projects</a></li>
-<li><a href="research.html">Research</a></li>
-<li><a href="education.html">Education</a></li>
-<li><a href="index.html">Blog</a></li>
-<li><a href="https://docs.google.com/document/d/1-SX2Pz1rD9D1IS-r5PpCCb1JeihSM_BtnI5Y9uruQGc/edit?usp=sharing" target="_blank">My Resume</a></li>
+<li><a href="index.html">Inicio</a></li>
+<li><a href="experience.html">Experiencia</a></li>
+<li><a href="projects.html">Proyectos</a></li>
+<li><a href="research.html">Investigación/a></li>
+<li><a href="education.html">Educación</a></li>
+<li><a href="services.html">Servicios</a></li>
+<li><a href="https://docs.google.com/document/d/1-SX2Pz1rD9D1IS-r5PpCCb1JeihSM_BtnI5Y9uruQGc/edit?usp=sharing" target="_blank">Mi Resume</a></li>
 
 
 <!--TOGGLE FOR LIGHT/DARK MODE-->
@@ -94,7 +94,7 @@ let footer = $(`
       <div class="col-lg-7 col-md-6 pt-3" >
       <div class="col-sm-6 col-md-7">
         <a class="webintern-footer-logo" href="#">
-          <center><img src="assets/images/John-Doe1.png"style="width: 220px;"/></center>
+          <center><img src="assets/images/logo_cambios.png"style="width: 170px;"/></center>
         </a>
         <div class="simple-text text-center dark padding-sm">
           <p >
@@ -112,7 +112,7 @@ let footer = $(`
   <a class="social-icon-footer dribbble" href="" target="_blank" rel="author">
     <i class="fab fa-dribbble"></i>
       </a>
-  <a class="social-icon-footer linkedin" href="" target="_blank" rel="author">
+  <a class="social-icon-footer linkedin" href="https://www.linkedin.com/in/eduardo-villalpando-9b7494130/" target="_blank" rel="author">
     <i class="fab fa-linkedin-in"></i>
       </a>
   <a class="social-icon-footer medium" href="" target="_blank" rel="author">
@@ -125,7 +125,7 @@ let footer = $(`
     <i class="fab fa-github"></i>
       </a>
   <br>
-<p style="color:white;><a href=" ">contact@johndoe.com</a></p>
+<p style="color:white;><a href=" ">villalpe5@gmail.com</a></p>
 </div>
     </div>
 
@@ -133,25 +133,28 @@ let footer = $(`
 
         <!-- footer_title -->
         <h4 class="webintern_footer_title h5">
-          <small>Get In Touch</small>
+          <small>Enviame un mensaje</small>
         </h4>
         <!-- TT-SUBSCRIBE -->
 
       <div class="contact-form">
-          <form>
-              <fieldset class="form-group text-center">
-                  <input type="text" class="form-control" id="exampleInputEmail1" placeholder="Enter Name">
-              </fieldset>
-              <fieldset class="form-group text-center">
-                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
-              </fieldset>
-              <fieldset class="form-group text-center">
-                  <textarea class="form-control" id="exampleMessage" placeholder="Message"></textarea>
-              </fieldset>
-              <fieldset class="form-group text-xs-right text-center">
-                  <button type="button" class="send-btn btn btn-lg">Send</button>
-              </fieldset>
-          </form>
+        <form action="/email" method="POST">
+            <fieldset class="form-group text-center">
+                <input type="text" class="form-control" name="name" placeholder="Enter Name">
+            </fieldset>
+            <fieldset class="form-group text-center">
+                <input type="email" class="form-control" name="email" placeholder="Enter email">
+            </fieldset>
+            <fieldset class="form-group text-center">
+                <input type="text" class="form-control" name="subject" placeholder="Subject">
+            </fieldset>
+            <fieldset class="form-group text-center">
+                <textarea class="form-control" name="text" placeholder="Message"></textarea>
+            </fieldset>
+            <fieldset class="form-group text-xs-right text-center">
+                <button type="submit" id="submit" class="send-btn btn btn-lg">Send</button>
+            </fieldset>
+        </form>
       </div>
         <div class="empty-space marg-lg-b30"></div>
       </div>
@@ -192,3 +195,21 @@ if(checkbox)
      document.documentElement.classList.remove('transition')
    }, 1000)
  }}
+
+ if (footer) {
+  $("#submit").click(function() {
+    let name = $(".name").val();
+    let email = $(".email").val();
+    let text = $(".text").val();
+  
+    if (name !== '' || email !== '' || text !== '') {
+      swal({
+        title: "Good job!",
+        text: "You send the message to Eduardo!",
+        icon: "success",
+        buttons: ["Thanks!", true],
+      });
+    }
+  });
+ }
+ 

@@ -43,7 +43,6 @@ html {
   font-size: 4em;
   font-weight: bolder;
   background: var(--bg-txt-img);
-  -webkit-background-clip: text;
   -webkit-text-fill-color: var(--txt-fill);
   padding-bottom: 0.1em;
 }
@@ -160,8 +159,14 @@ html {
   margin-left: 0px !important;
 }
 
+.brand-logo {
+  height: 64px;
+  width: 140px;
+}
+
 .brand-logo img {
-  width: 200px;
+  width: auto;
+  height: inherit;
 }
 
 h1,
@@ -289,6 +294,13 @@ html.transition *:after {
   background-image: var(--bg-nav-img);
   padding: 20px;
 }
+
+/*.webintern-footer img {
+  background-color: white;
+  border: 3px solid gray;
+  border-radius: 20px;
+}*/
+
 .row{
 
   clear: both;
@@ -440,6 +452,13 @@ html.transition *:after {
     width: 220px;
   }
 }
+
+@media only screen and (max-width: 992px) {
+  .brand-logo{
+    display: none !important;
+  }
+}
+    
 
 .send-btn {
   padding-top: 5px 3px 5px 3px;

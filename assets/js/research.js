@@ -12,8 +12,8 @@ const citeTable8 = document.querySelector(".citeT8");
 
 const research = [
     {
-        title : "A Batch Normalized Inference Network Keeps the KL Vanishing Away",
-        authors : "Qile Zhu, Wei Bi, Xiaojiang Liu, Xiyao Ma, Xiaolin Li and Dapeng Wu",
+        title : "Data Model Design",
+        authors : "Mongodb Documentation",
         conferences : "The 58th Annual Meeting of the Association for Computational Linguistics",
         researchYr : 2020,
         citebox : "#popup1",
@@ -21,8 +21,8 @@ const research = [
     },
 
     {
-        title : "A Call for More Rigor in Unsupervised Cross-lingual Learning",
-        authors : "Mikel Artetxe, Sebastian Ruder, Dani Yogatama, Gorka Labaka and Eneko Agirre",
+        title : "Relationship with mongodb and mongoose in Node-Express",
+        authors : "Brandon Lau",
         conferences : "The 58th Annual Meeting of the Association for Computational Linguistics",
         researchYr : 2020,
         citebox : "#popup2",
@@ -30,8 +30,8 @@ const research = [
     },
 
     {
-        title : "A Comprehensive Analysis of Preprocessing for Word Representation Learning in Affective Tasks",
-        authors : "Nastaran Babanejad, Ameeta Agrawal, Aijun An and Manos Papagelis",
+        title : "The Consumer’s Guide to Internet Speed",
+        authors : "Rebeca Lee Amstrong",
         conferences : "The 58th Annual Meeting of the Association for Computational Linguistics",
         researchYr : 2020,
         citebox : "#popup3",
